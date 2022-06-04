@@ -40,7 +40,7 @@ namespace YoutubeAudioDownloader2.Main.List.Item
                 var streamManifest = await MainForm.YoutubeClient.Videos.Streams.GetManifestAsync(video.Id);
                 streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
 
-                labelEncoding.Text = streamInfo.Container.Name;
+                labelEncoding.Text = streamInfo.Container.Name + "/" + ((IAudioStreamInfo)streamInfo).AudioCodec;
                 labelBitrate.Text = streamInfo.Bitrate.KiloBitsPerSecond.ToString("0.00") + " Kbps";
                 labelSize.Text = streamInfo.Size.MegaBytes.ToString("0.00") + " MB";
 
@@ -48,7 +48,7 @@ namespace YoutubeAudioDownloader2.Main.List.Item
             }
             catch (Exception exception)
             {
-                MessageBox.Show(exception.Message);
+                MessageBox.Show("Errore", exception.Message);
             }
         }
         #endregion

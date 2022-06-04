@@ -224,7 +224,7 @@
             this.MinimumSize = new System.Drawing.Size(470, 377);
             this.Name = "InformationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Youtube Audio Downloader";
+            this.Text = "Youtube Audio Downloader 2";
             this.Load += new System.EventHandler(this.InformationForm_Load);
             this.groupBoxDescription.ResumeLayout(false);
             this.groupBoxStatistics.ResumeLayout(false);

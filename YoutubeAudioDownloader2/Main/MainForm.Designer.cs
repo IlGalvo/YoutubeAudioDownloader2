@@ -67,7 +67,7 @@
             this.buttonResearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGreen;
             this.buttonResearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.buttonResearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonResearch.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResearch.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonResearch.ForeColor = System.Drawing.Color.DarkGreen;
             this.buttonResearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonResearch.Image")));
             this.buttonResearch.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -89,7 +89,7 @@
             this.buttonList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGreen;
             this.buttonList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.buttonList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonList.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonList.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonList.ForeColor = System.Drawing.Color.DarkGreen;
             this.buttonList.Image = ((System.Drawing.Image)(resources.GetObject("buttonList.Image")));
             this.buttonList.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -112,7 +112,7 @@
             this.buttonDownload.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGreen;
             this.buttonDownload.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.buttonDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDownload.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDownload.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonDownload.ForeColor = System.Drawing.Color.DarkGreen;
             this.buttonDownload.Image = ((System.Drawing.Image)(resources.GetObject("buttonDownload.Image")));
             this.buttonDownload.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -135,7 +135,7 @@
             this.buttonSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGreen;
             this.buttonSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSettings.ForeColor = System.Drawing.Color.DarkGreen;
             this.buttonSettings.Image = ((System.Drawing.Image)(resources.GetObject("buttonSettings.Image")));
             this.buttonSettings.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -166,13 +166,13 @@
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.tableLayoutPanelMenu);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = global::YoutubeAudioDownloader2.Properties.Resources.Icon;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MinimumSize = new System.Drawing.Size(750, 377);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Youtube Audio Downloader";
+            this.Text = "Youtube Audio Downloader 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tableLayoutPanelMenu.ResumeLayout(false);
