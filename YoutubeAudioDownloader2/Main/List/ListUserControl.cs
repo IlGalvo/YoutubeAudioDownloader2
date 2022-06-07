@@ -42,6 +42,11 @@ namespace YoutubeAudioDownloader2.Main.List
                 panelContent.BackgroundImage = null;
             }
         }
+
+        private void PanelContent_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            e.Control.Dispose();
+        }
         #endregion
     }
 }

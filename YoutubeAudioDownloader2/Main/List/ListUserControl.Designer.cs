@@ -65,6 +65,7 @@
             this.panelContent.Size = new System.Drawing.Size(734, 557);
             this.panelContent.TabIndex = 0;
             this.panelContent.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.PanelContent_ControlAdded);
+            this.panelContent.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.PanelContent_ControlRemoved);
             // 
             // ListUserControl
             // 
