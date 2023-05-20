@@ -55,7 +55,8 @@ namespace YoutubeAudioDownloader2.Main.Download.Item
             converterMp3.ConvertionProgress += ConverterMp3_ConvertionProgress;
             converterMp3.ConvertionFinished += ConverterMp3_ConvertionFinished;
 
-            pictureBoxImage.LoadAsync(video.Thumbnails.GetWithHighestResolution().Url);
+            var imageUrl = string.Format("https://img.youtube.com/vi/{0}/hqdefault.jpg", video.Id);
+            pictureBoxImage.LoadAsync(imageUrl);
 
             resizableLabelTitle.Text = video.Title;
             labelBitrateSize.Text = "320 Kbps / " + (streamInfo.Size.MegaBytes * 2.5).ToString("00.00") + " MB~";
