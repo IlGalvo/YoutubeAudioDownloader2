@@ -101,10 +101,8 @@ namespace YoutubeAudioDownloader2.Converter
                 {
                     totalDuration = TimeSpan.Parse(ExtractValue(data, "duration: ", ","));
                 }
-                else if (data.StartsWith("size"))
+                else if (data.StartsWith("size") && TimeSpan.TryParse(ExtractValue(data, "time=", " "), out var currentDuration))
                 {
-                    var currentDuration = TimeSpan.Parse(ExtractValue(data.Trim(), "time=", " "));
-
                     ConvertionProgress?.Invoke(this, new ConversionProgressEventArgs(currentDuration, totalDuration, converterStatus!.UserToken));
                 }
             }
